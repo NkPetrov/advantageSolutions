@@ -16,10 +16,10 @@ dependencies {
     testCompileOnly ("org.projectlombok:lombok:1.18.24")
     testAnnotationProcessor ("org.projectlombok:lombok:1.18.24")
     testImplementation ("io.rest-assured:rest-assured:5.1.1")
+    testImplementation("org.assertj:assertj-core:3.23.1")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }
-
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
